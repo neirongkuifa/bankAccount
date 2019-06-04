@@ -6,14 +6,14 @@ pipeline{
     stages{
         stage("Source"){
             steps{
-                maven "clean"
+                mvn "clean"
                 sh "git clone https://github.com/neirongkuifa/bankAccount.git"
             }
         }
 
         stage("Package"){
             steps{
-                maven "package"
+                mvn "package"
             }
         }
     }
