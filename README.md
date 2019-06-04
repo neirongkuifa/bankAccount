@@ -20,7 +20,7 @@
 }
 ```
 
-2. GET -- "/getAccount?id=1559681921263"
+2. GET -- "/getAccount?id=<Acc No.>"
 3. POST -- "/deposit"
 
 ```
@@ -31,7 +31,10 @@
 ```
 
 4. POST -- "/withdraw"
-   {
-   "id":"1559681921263",
-   "amount":300
-   }
+
+```
+{
+"id":"1559681921263",
+"amount":300
+}
+```
