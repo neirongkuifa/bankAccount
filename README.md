@@ -20,7 +20,7 @@
 }
 ```
 
-2. GET -- "/getAccount?id=\<Account Number\>"
+2. GET -- "/getAccount?id=\<Account Number>"
 3. POST -- "/deposit"
 
 ```
