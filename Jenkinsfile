@@ -1,16 +1,19 @@
 pipeline{
     agent any
+    tools{
+        maven 'maven'
+    }
     stages{
         stage("Source"){
             steps{
-                sh "/usr/local/bin/mvn clean"
+                maven "clean"
                 sh "git clone https://github.com/neirongkuifa/bankAccount.git"
             }
         }
 
         stage("Package"){
             steps{
-                sh "/usr/local/bin/mvn package"
+                maven "package"
             }
         }
     }
