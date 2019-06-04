@@ -3,14 +3,14 @@ pipeline{
     stages{
         stage("Source"){
             steps{
-                sh "mvn clean"
+                sh "/usr/local/bin/mvn clean"
                 sh "git clone https://github.com/neirongkuifa/bankAccount.git"
             }
         }
 
         stage("Package"){
             steps{
-                sh "mvn package"
+                sh "/usr/local/bin/mvn package"
             }
         }
     }
